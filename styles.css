@@ -2,7 +2,7 @@ body {
     font-family: Roboto, sans-serif;
     padding: 0;
     margin: 0;
-    flex-flow: column wrap;
+    flex-flow: column wrap; 
 }
 
 ul {
@@ -17,12 +17,6 @@ ul a {
    color: #e5e7eb;
 }
 
-h1 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
-}
-
 img {
     max-width: 100%;
 }
@@ -31,42 +25,53 @@ img {
     background-color: #1f2937;
 }
 
-.header, .first, .second, .third, .fourth, .footer {
-    padding: 30px 60px;
+.header, .footer {
+    padding: 10px 19%;
+}
+
+.first, .second, .third, .fourth {
+    padding: 5% 1%;
 }
 
 .header {
     display: flex;
     margin-bottom: 0;
-    /* padding: 12px; */
     align-items: center;
 }
 
 .logo, .logo a {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: 900;
     margin-right: auto;
     text-decoration: none; 
-}
-
-.container {
-    flex: 1;
 }
 
 .first {
     display: flex;
     flex: 1;
-    justify-content: space-between;
-    /* gap: 10px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3%;
+    align-items: flex-start;
 }
 
-.hero p {
+.hero {
+    width: 30%;
     font-size: 18px;
     color: #e5e7eb;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    padding: 0;
+    margin: 0;
+}
+
 .hero-img {
-    width: 400px;
+    width: 30%;
 }
 
 button {
@@ -91,14 +96,36 @@ button:hover {
 }
 
 .carousel {
-    display: flex;
+    display: flex;  
     flex: 1;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 64px;
     justify-content: center;
+}
+
+.box {
+    max-width: 200px;
+    text-align: center;
+}
+
+.carousel p {
+    color: gray;
+}
+
+.box img {
+    max-width: inherit;
+    border-radius: 15px;
+    border: 5px solid #3882f6;
 }
 
 .third {
     background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+}
+
+blockquote {
+    max-width: 50%;
 }
 
 .quote {
@@ -110,10 +137,12 @@ button:hover {
 
 .quote-author {
     text-align: right;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .fourth {
-    width: 60vw;
+    max-width: 30%;
     background-color: #3882f6;
     color: #f9faf8;
     border-radius: 5px;
@@ -121,10 +150,16 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     margin: 60px auto;
+    padding: 1% 8%;
+}
+
+.fourth-a {
+    margin-right: auto;
 }
 
 .cta-button {
     border: 2px solid #f9faf8;
+    padding: 12px 20px;
 }
 
 .footer {
