@@ -8,7 +8,7 @@ body {
 ul {
     list-style-type: none;
     display: flex;
-    gap: 10px;
+    gap: 16px;
 }
 
 ul a {
@@ -25,10 +25,6 @@ img {
     background-color: #1f2937;
 }
 
-.header, .footer {
-    padding: 10px 19%;
-}
-
 .first, .second, .third, .fourth {
     padding: 5% 1%;
 }
@@ -37,6 +33,7 @@ img {
     display: flex;
     margin-bottom: 0;
     align-items: center;
+    padding: 10px 19%;
 }
 
 .logo, .logo a {
@@ -166,4 +163,5 @@ blockquote {
     margin-top: auto;
     text-align: center;
     color:#e5e7eb;
+    padding: 1%;
 }
